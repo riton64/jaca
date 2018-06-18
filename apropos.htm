@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Images avec z-index</title>
+    <link rel="stylesheet" href="site.css">
+    <script src=http://code.jquery.com/jquery.min.js></script>	
+  </head>
+  <body>
+        <header id="entete">
+	  <img id="image" src="html5css3jQuery.png">
+      <span id="titre">Album photos</span>
+	 <br />Choisissez l'image à afficher :&nbsp;
+		<a id="i1" href=#>01</a>
+		<a id="i2" href=#>02</a>
+		<a id="i3" href=#>03</a>
+		<a id="i4" href=#>04</a> 
+		<a id="i5" href=#>05</a>
+		<a id="i6" href=#>06</a>
+		<a id="i7" href=#>07</a>
+       </header>
+      
+       <article id="corps">
+	   <p id="legende">Jaca et ses monastères</p>
+        	<img  id= "photo" src="images/lesdav.jpg"/>	
+		<img  id= "photo" src="images/IMG_1.jpg" style="display: none;" />
+		<img  id= "photo" src="images/IMG_2.jpg" style="display: none;" />
+		<img  id= "photo" src="images/IMG_3.jpg" style="display: none;" />
+		<img  id= "photo" src="images/IMG_4.jpg" style="display: none;" />
+		<img  id= "photo" src="images/IMG_5.jpg" style="display: none;" />
+		<img  id= "photo" src="images/IMG_6.jpg" style="display: none;" />
+		<img  id= "photo" src="images/IMG_7.jpg" style="display: none;" />
+	    	
+	    <script>
+	      $(function(){
+		$('#i1').click(function(){
+		      $('#photo').attr('src','images/IMG_1.jpg');
+	       	      $('p').text("Santa Cruz de la pena    ");
+		     });
+		 $('#i2').click(function(){
+	 	      $('#photo').attr('src','images/IMG_2.jpg');
+		       $('p').text("Eglise de Santa Cruz    ");	
+		    });
+	      $('#i3').click(function(){
+		      $('#photo').attr('src','images/IMG_3.jpg');
+			 $('p').text("Vue depuis le village  ");
+		    });
+		 $('#i4').click(function(){
+		      $('#photo').attr('src','images/IMG_4.jpg');
+			 $('p').text("Santa Cruz de la pena  ");
+		    });
+		 $('#i5').click(function(){
+		      $('#photo').attr('src','images/IMG_5.jpg');
+			 $('p').text("Plan du site  ");
+		    });
+	      $('#i6').click(function(){
+		      $('#photo').attr('src','images/IMG_6.jpg');
+			 $('p').text("San Juan de la pena  ");
+		    });
+		 $('#i7').click(function(){
+		      $('#photo').attr('src','images/IMG_7.jpg');
+		       $('p').text("San Juan vue d'ensemble  ");
+		    });
+	      });
+	   </script>
+       </article>
+       <footer id="basdepage">
+       <span id="copy">Copyright (c) 2018 by Henri</span>
+    </footer> 
+   </body>
+</html>	

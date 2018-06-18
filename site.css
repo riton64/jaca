@@ -1,0 +1,112 @@
+header, nav, article, section, footer, aside { display: block; }
+
+@font-face 
+{
+  font-family: Onthemove;
+  src: url('onthemove.ttf');
+  src: url('onthemove.eot');
+  src: url('onthemove.svg');
+  src: url('onthemove.woff');
+}
+a { padding-right: 20px; }
+
+* { 
+  font-family: "Onthemove"; 
+  font-size: 30px;
+}
+
+#entete {
+  background-color: #01B0F0;
+  height: 100px;
+  text-align:center;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px grey;  
+}
+#image { 
+  float: left; 
+  padding-top: 0px;
+}
+#photo {
+ float: center;
+ padding-top: 525px:
+ padding-left:25px;
+}		
+#legende {
+ float:left;
+ font-size: 40px;
+ padding-top:120px;
+ padding-right:50px;
+ padding-left:5px;
+ text-align: left;
+ text-shadow: 4px 4px 4px grey;
+ 
+}
+#titre  { 
+  float: center; 
+  font-size: 50px; 
+  padding-top:5px;
+  padding-right: 1px;
+  text-align:center;
+  text-shadow: 4px 4px 4px grey;
+}
+#basdepage {
+  background-color: #01B0F0;
+  height: 30px;
+  border-radius: 15px; 
+  box-shadow: 5px 5px 5px grey;  
+}
+#copy {
+  padding-right: 30px;
+  float: right;
+}  
+ul {margin:0;}
+#corps {
+  height: 560px;   
+  border-radius: 15px; 
+  margin-top: 0px;
+  margin-bottom: 0px;
+  box-shadow: 5px 5px 5px grey;  
+}
+#lemenu {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}  
+
+.ui-menu { min-height: 47px; }
+
+#menu>li { 
+  width: 200px;
+  float: left;
+}
+
+label, input { 
+  margin-left: 10px; 
+  margin-bottom: 15px;
+}
+label {
+  display: inline-block;
+  width: 100px;
+}
+input[type=text]:invalid, input[type=password]:invalid {background-color: red; }
+input[type=text]:valid, input[type=password]:valid {background-color: green; }
+
+table {
+        margin-left: 20px;
+        border: 4px double black;
+        border-spacing: 0;
+        text-align: center;
+        color: blue;
+        font-weight: bold;
+        border-radius: 15px; 
+        box-shadow: 5px 5px 6px gray;
+}
+th {
+        color: #fff;
+        font-size: 110%;
+        text-shadow: 2px 2px 2px gray;
+}
+tr:nth-child(odd) { background-color: silver; }
+tr:nth-child(even) { background-color: white; }
+.col1 { width: 200px; }
+.col2 { width: 600px; }
+
